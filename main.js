@@ -1,0 +1,23 @@
+"use strict";
+
+let a=2;
+
+// === -> strict -> equal same value and same type
+// == -> equal -> same value but type does not matter
+
+if({}){
+    console.log("Hello");
+}else{
+    console.log("else here");
+}
+
+let v = [1, 2];
+console.log(v);
+let arr = v; // copy by reference
+console.log(arr);
+let b = Array.from(arr);  // not copy by reference, shallow copy
+b[1] = 3;
+console.log("b = ", b);
+console.log("arr = ", arr);
+console.log("v = ", v);
+console.log(v.join(';'));  // convert an array into a string with a delimiter ';' or anything
