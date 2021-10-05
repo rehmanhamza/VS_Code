@@ -21,4 +21,6 @@ console.log("b = ", b);
 console.log("arr = ", arr);
 console.log("v = ", v);
 console.log(v.join(';'));  // convert an array into a string with a delimiter ';' or anything
-// commenting for seeing changes taking place at repo
+// commenting for seeing changes taking place at repo (macOS)
+// used git pull and obtained the desired changes
+// Now pushing from Windows 10 and trying git pull from macOS
