@@ -123,3 +123,9 @@ const fn = function do(params){
 }
 */
 
+let sq = sqrt;  // we can assign functions to a variable and use that too
+y = sq(y);
+console.log(y)
+
+const operation  = [function(x) {return x+1}, function(x) {return x-1}];
+console.log(operation[2, 3]);
