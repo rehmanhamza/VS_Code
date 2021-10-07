@@ -100,4 +100,5 @@ console.log(y)
 
 // problem not working properly
 const operation  = [function(x) {return x+1}, function(x) {return x-1}];
-console.log(operation[2, 3]);
+let op = operation[2, 3];
+console.log(op());
