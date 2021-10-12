@@ -23,3 +23,43 @@ Mathematical Methods, Open and Virtualized Networks, Computer Architecture";
 
 let array_courses = courses.split(",");
 console.log(array_courses);
+
+// 1210
+
+function Exam(code, name, cfu, score, honors, datePassed){
+    this.code = code;
+    this.name = name;
+    this.cfu = cfu;
+    this.score = score;
+    this.honors = honors;
+    this.datePassed = datePassed;
+}
+
+function ExamList(){
+    this.exams = [];  // if 'this.' is removed it is like creating a local var in ftn
+    
+    this.add = (exam) => {
+        this.exams.push(exam);
+    }
+
+    this.find = (courseCode) => {
+         // filter always return an array
+        const result = this.exams.filter(ex => ex.code === courseCode);
+        if(result.length == 1){
+            return result[0];
+        }else{
+            return undefined;
+        }
+    }
+}
+const wa1 = new Exam('01FXY', 'Web Application I', 6, 28, false, '2021-02-10');
+const db = new Exam('01ANC', 'Data Science', 8, 25, false, '2021-02-11');
+
+console.log(wa1);
+console.log(db);
+
+const myExams = new ExamList(); // object is constant, the reference is not
+myExams.add(wa1);
+myExams.add(db);
+
+debugger;
