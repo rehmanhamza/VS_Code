@@ -12,6 +12,6 @@ const reverse = (s) => s.split(' ').map(v => v.split('').reverse().join('')).joi
 
 console.log(reverse("Let's take LeetCode contest"));
 
-const array = [1,-1];
+const array = [1,2,3,4,5,6,7];
 const sum = array.reduce((a, b) => a+b, 0);
 console.log(sum)
